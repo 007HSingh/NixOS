@@ -1,0 +1,57 @@
+{
+  config,
+  lib,
+  modulesPath,
+  ...
+}:
+
+{
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+  ];
+
+  boot = {
+    initrd = {
+      availableKernelModules = [
+        "vmd"
+        "xhci_pci"
+        "thunderbolt"
+        "nvme"
+        "usb_storage"
+        "sd_mod"
+      ];
+      kernelModules = [ ];
+    };
+    kernelModules = [ "kvm-intel" ];
+    extraModulePackages = [ ];
+  };
+
+  fileSystems."/" = {
+    device = "/dev/disk/by-uuid/6677f889-adbd-4427-8e97-0ca37fe1365c";
+    fsType = "ext4";
+  };
+
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-uuid/040F-1E36";
+    fsType = "vfat";
+    options = [
+      "fmask=0022"
+      "dmask=0022"
+    ];
+  };
+
+  swapDevices = [
+    { device = "/dev/disk/by-uuid/5007d133-7def-485d-983f-c7d5a6542e1e"; }
+  ];
+
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  # PCI addresses identify the integrated Intel and discrete NVIDIA GPUs for PRIME.
+  hardware.nvidia.prime = {
+    sync.enable = true;
+
+    intelBusId = "PCI:0@0:2:0";
+    nvidiaBusId = "PCI:1@0:0:0";
+  };
+}

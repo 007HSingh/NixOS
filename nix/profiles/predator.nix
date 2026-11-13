@@ -1,0 +1,19 @@
+_:
+
+{
+  modules.system = {
+    boot.enable = true;
+    desktop.enable = true;
+    fonts.enable = true;
+    hardware.enable = true;
+    networking.enable = true;
+    nix.enable = true;
+    nvidia.enable = true;
+    packages.enable = true;
+    programs.enable = true;
+    security.enable = true;
+    services.enable = true;
+    stylix.enable = true;
+    users.enable = true;
+  };
+}
