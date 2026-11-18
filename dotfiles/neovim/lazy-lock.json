@@ -5,7 +5,7 @@
   },
   "SchemaStore.nvim": {
     "branch": "main",
-    "commit": "06012297e4d5d089ce5ac4cc8011a8f3c0148190"
+    "commit": "e8c3d2225d6bf5e2cbe414952c247d7a3411849b"
   },
   "aerial.nvim": {
     "branch": "master",
@@ -49,7 +49,7 @@
   },
   "friendly-snippets": {
     "branch": "main",
-    "commit": "b2ea5c41a150ba72fb656eedb4ed0a86d138d945"
+    "commit": "7a1c9f7897a4eb078b157a04c7af81e5869215b1"
   },
   "gitlinker.nvim": {
     "branch": "master",
@@ -57,7 +57,7 @@
   },
   "gitsigns.nvim": {
     "branch": "main",
-    "commit": "ef707fb93301a9b856f36eae4c8f56f5b988a794"
+    "commit": "dc7698f932792a764d3db95fedee26c38e728355"
   },
   "grug-far.nvim": {
     "branch": "main",
@@ -74,10 +74,6 @@
   "indent-blankline.nvim": {
     "branch": "master",
     "commit": "f1e186e44d3b7f9ae918008e2c28ce37c6023d2d"
-  },
-  "kulala.nvim": {
-    "branch": "main",
-    "commit": "125751ea9f41c1ee966c5c7e3032e3539dd2f33e"
   },
   "lazy.nvim": {
     "branch": "main",
@@ -97,7 +93,7 @@
   },
   "neogit": {
     "branch": "master",
-    "commit": "ba2f33b64b996ff5530c4c45a3c432fb63aaa95b"
+    "commit": "aa99b440b266bcf7e03399f149ed46f981555fa3"
   },
   "neotest": {
     "branch": "master",
@@ -149,7 +145,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "d5c7e7bcc15bccc01bf1601a03473e10de2f0f7e"
+    "commit": "05588aab66016c6836634b87ca2d392d097515f2"
   },
   "nvim-nio": {
     "branch": "master",
@@ -165,11 +161,11 @@
   },
   "nvim-tree.lua": {
     "branch": "master",
-    "commit": "4cb123287efe9a7191cce287a005d4a9c8bed4a0"
+    "commit": "5cc8d425c2bf3c09041a2db3cfff6197e2dce34d"
   },
   "nvim-treesitter": {
     "branch": "main",
-    "commit": "915f2bd3d4e2a33704bfc476b5137e9befa82f3d"
+    "commit": "04f17886f75416dfdc25374c950a52c63f0e98fe"
   },
   "nvim-treesitter-context": {
     "branch": "master",
@@ -209,7 +205,7 @@
   },
   "render-markdown.nvim": {
     "branch": "main",
-    "commit": "8e8795368391036643b622875a6da6a51bcd33f4"
+    "commit": "8801162e041e34c64d0d1397cd1f353a14b01950"
   },
   "snacks.nvim": {
     "branch": "main",
@@ -257,7 +253,7 @@
   },
   "ui": {
     "branch": "v3.0",
-    "commit": "8cbf0dc1883b20a1df114149c187d250f0af0853"
+    "commit": "efb7edef6789548fd02ac88b8d47b3e344031c53"
   },
   "undotree": {
     "branch": "master",
